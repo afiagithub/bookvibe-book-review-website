@@ -7,12 +7,14 @@ import BookList from './Pages/BookList';
 import PagesToRead from './Pages/PagesToRead';
 import Home from './Pages/Home';
 import BookDetails from './Pages/BookDetails';
+import ErrorPage from './Pages/ErrorPage';
 import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
