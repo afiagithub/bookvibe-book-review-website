@@ -7,6 +7,7 @@ import BookList from './Pages/BookList';
 import PagesToRead from './Pages/PagesToRead';
 import Home from './Pages/Home';
 import BookDetails from './Pages/BookDetails';
+import { Toaster } from 'react-hot-toast';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/books",
-        element: <BookList></BookList>,
+        element: <BookList></BookList>,        
       },
       {
         path: "/pages",
@@ -38,5 +39,6 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    <Toaster />
   </React.StrictMode>,
 )

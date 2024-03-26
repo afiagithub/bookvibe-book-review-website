@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar w-[90%] mx-auto py-6">
+        <div className="navbar lg:w-[90%] mx-auto py-6">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -21,7 +21,7 @@ const Navbar = () => {
                                 "border-2 border-transparent p-3 rounded-lg"}>Pages to Read</NavLink>
                     </ul>
                 </div>
-                <a className="btn btn-ghost font-extrabold text-2xl">Book Vibe</a>
+                <NavLink to="/" className="btn btn-ghost font-extrabold text-2xl">Book Vibe</NavLink>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 flex gap-4 items-center font-bold">
