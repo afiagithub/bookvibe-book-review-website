@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import PropTypes from 'prop-types';
-import { saveBooks } from "../utils";
+import { deleteBook, saveBooks } from "../utils";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -9,6 +9,9 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId === idInt);
 
     const addToRead = (type, book) =>{
+        if(type === 1){
+            deleteBook(book.bookId)
+        }        
         saveBooks(type, book)
     }
 
