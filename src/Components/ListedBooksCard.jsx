@@ -29,7 +29,7 @@ const ListedBooksCard = ({ bookList }) => {
                     <p className="flex items-center gap-2">
                         <span className="text-2xl"><GiBlackBook /></span>Page: {totalPages}</p>
                 </div>
-                <div className="flex flex-row gap-3">
+                <div className="flex flex-col lg:flex-row gap-3">
                     <div className="badge bg-[#328eff26] text-base text-[#328EFF] p-5 font-bold">
                         Category: {category}</div>
                     <div className="badge bg-[#ffac3326] text-base text-[#FFAC33] p-5 font-bold">
