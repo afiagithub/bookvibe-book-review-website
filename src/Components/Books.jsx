@@ -1,4 +1,5 @@
 import BookCard from "./BookCard";
+import PropTypes from 'prop-types';
 
 const Books = ({bookList}) => {
     return (
@@ -12,7 +13,12 @@ const Books = ({bookList}) => {
                 }
             </div>
         </div>
+        
     );
 };
+
+Books.propTypes = {
+    bookList: PropTypes.array
+}
 
 export default Books;
