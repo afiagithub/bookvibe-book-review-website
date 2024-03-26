@@ -8,7 +8,7 @@ const Banner = () => {
                 <div>
                     <h1 className="text-5xl font-bold font-play leading-tight lg:leading-snug">
                         Books to freshen up <br /> your bookshelf</h1>                   
-                    <NavLink to="/pages" className="btn bg-[#23BE0A] text-white mt-4 lg:mt-8">
+                    <NavLink to="/books" className="btn bg-[#23BE0A] text-white mt-4 lg:mt-8">
                         View The List</NavLink>
                 </div>
             </div>
