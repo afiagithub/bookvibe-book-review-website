@@ -17,7 +17,7 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('../BookData.json'),
+        loader: () => fetch('./BookData.json'),
       },
       {
         path: "/about",
@@ -26,12 +26,12 @@ export const router = createBrowserRouter([
       {
         path: "/pricing",
         element: <PricingPage></PricingPage>,
-        loader: () => fetch('../PriceData.json')
+        loader: () => fetch('./PriceData.json')
       },
       {
         path: "/:id",
         element: <BookDetails></BookDetails>,
-        loader: () => fetch('../BookData.json'),
+        loader: () => fetch('./BookData.json'),
       },
       {
         path: "/books",

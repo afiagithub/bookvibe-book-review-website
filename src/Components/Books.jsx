@@ -5,7 +5,7 @@ const Books = ({bookList}) => {
     return (
         <div className="my-8 lg:my-16 w-[90%] mx-auto">
             <div className="books-heading text-center pt-10">
-                <h1 className="font-play font-bold text-4xl">Books: {bookList.length}</h1>
+                <h1 className="font-play font-bold text-4xl">Books</h1>
             </div>
             <div className="books-content mx-8 lg:mx-5 grid grid-cols-1 lg:grid-cols-3 gap-6 mt-12">
                 {
