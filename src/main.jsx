@@ -9,6 +9,7 @@ import Home from './Pages/Home';
 import BookDetails from './Pages/BookDetails';
 import ErrorPage from './Pages/ErrorPage';
 import { Toaster } from 'react-hot-toast';
+import AboutUs from './Pages/AboutUs';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
         loader: () => fetch('../BookData.json'),
+      },
+      {
+        path: "/about",
+        element: <AboutUs></AboutUs>,
       },
       {
         path: "/:id",

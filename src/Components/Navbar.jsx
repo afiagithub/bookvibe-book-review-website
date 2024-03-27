@@ -29,6 +29,10 @@ const Navbar = () => {
                         ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                             "border-2 border-transparent p-3 rounded-lg"}>
                         Home</NavLink>
+                    <NavLink to="/about" className={
+                        ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
+                            "border-2 border-transparent p-3 rounded-lg"}>
+                        About Us</NavLink>
                     <NavLink to="/books" className={
                         ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                             "border-2 border-transparent p-3 rounded-lg"}>Listed Books</NavLink>
