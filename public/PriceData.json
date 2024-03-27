@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "package_name": "Bibliophile",
+      "price": "$9.99/month",
+      "features": [
+        "Unlimited access to our entire library",
+        "Customizable reading lists",
+        "Offline reading mode",
+        "Ad-free experience"
+      ],
+      "short_description": "Perfect for avid readers seeking unrestricted access to a world of literature."
+    },
+    {
+      "id": 2,
+      "package_name": "Bookworm Plus",
+      "price": "$14.99/month",
+      "features": [
+        "All features of the Bibliophile package",
+        "Access to exclusive author interviews and book clubs",
+        "Personalized recommendations based on reading habits",
+        "Early access to new releases"
+      ],
+      "short_description": "For readers who crave extra perks and deeper engagement with their favorite books."
+    },
+    {
+      "id": 3,
+      "package_name": "Literary Connoisseur",
+      "price": "$19.99/month",
+      "features": [
+        "All features of the Bookworm Plus package",
+        "Priority customer support",
+        "Invitations to VIP literary events and author meetups",
+        "Access to rare and out-of-print books"
+      ],
+      "short_description": "Indulge in the ultimate reading experience with premium perks and exclusive privileges."
+    }
+  ]
+  

@@ -13,12 +13,19 @@ const Navbar = () => {
                             ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                                 "border-2 border-transparent p-3 rounded-lg"}>
                             Home</NavLink>
+                        <NavLink to="/about" className={
+                            ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
+                                "border-2 border-transparent p-3 rounded-lg"}>
+                            About Us</NavLink>
                         <NavLink to="/books" className={
                             ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                                 "border-2 border-transparent p-3 rounded-lg"}>Listed Books</NavLink>
                         <NavLink to="/pages" className={
                             ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                                 "border-2 border-transparent p-3 rounded-lg"}>Pages to Read</NavLink>
+                        <NavLink to="/pricing" className={
+                            ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
+                                "border-2 border-transparent p-3 rounded-lg"}>Pricing</NavLink>
                     </ul>
                 </div>
                 <NavLink to="/" className="btn btn-ghost font-extrabold text-2xl">Book Vibe</NavLink>
@@ -39,6 +46,9 @@ const Navbar = () => {
                     <NavLink to="/pages" className={
                         ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
                             "border-2 border-transparent p-3 rounded-lg"}>Pages to Read</NavLink>
+                    <NavLink to="/pricing" className={
+                            ({ isActive }) => isActive ? "text-[#23BE0A] border-2 border-[#23BE0A] p-3 rounded-lg" :
+                                "border-2 border-transparent p-3 rounded-lg"}>Pricing</NavLink>
                 </ul>
             </div>
             <div className="navbar-end flex gap-3">

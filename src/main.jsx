@@ -10,6 +10,7 @@ import BookDetails from './Pages/BookDetails';
 import ErrorPage from './Pages/ErrorPage';
 import { Toaster } from 'react-hot-toast';
 import AboutUs from './Pages/AboutUs';
+import PricingPage from './Pages/PricingPage';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,11 @@ const router = createBrowserRouter([
         element: <AboutUs></AboutUs>,
       },
       {
+        path: "/pricing",
+        element: <PricingPage></PricingPage>,
+        loader: () => fetch('../PriceData.json')
+      },
+      {
         path: "/:id",
         element: <BookDetails></BookDetails>,
         loader: () => fetch('../BookData.json'),
@@ -37,7 +43,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/pages",
-        element: <PagesToRead></PagesToRead>
+        element: <PagesToRead></PagesToRead>        
       },
     ]
   }  
